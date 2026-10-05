@@ -1,0 +1,44 @@
+/* Mentor.ai design tokens — copy into the app's global CSS. Source: screens/*.dc.html */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+:root{
+  --ink:#12142B; --muted:#5B6178; --bg:#F6F7FB; --card:#FFFFFF; --line:#E4E6EF; --line-2:#D5D8E4;
+  --navy:#1E1B4B; --navy-2:#312E81;           /* sidebar, dark hero, pet card */
+  --indigo:#4338CA; --indigo-d:#3730A3; --indigo-l:#EEF2FF; --indigo-m:#C7D2FE; --indigo-s:#A5B4FC; --indigo-x:#818CF8;
+  --ok:#15803D; --ok-bg:#F0FDF4; --ok-line:#BBF7D0;
+  --warn:#C2410C; --warn-bg:#FFF7ED; --warn-line:#FED7AA; --pro-bg:#FED7AA; --pro-ink:#7C2D12;
+  --bad:#B91C1C; --bad-bg:#FEF2F2; --bad-line:#FECACA;
+  --purple:#7E22CE; --purple-bg:#FAF5FF; --cyan:#0E7490; --cyan-bg:#ECFEFF; --amber:#F59E0B;
+  --pet:#6366F1; --pet-cheek:#F9A8D4;
+  --heat0:#E4E6EF; --heat1:#C7D2FE; --heat2:#818CF8; --heat3:#4338CA;
+  --r-card:18px; --r-card-sm:14px; --r-btn:12px; --r-chip:17px; --r-tag:7px;
+  --font-display:'Bricolage Grotesque',sans-serif; --font-body:'Plus Jakarta Sans',sans-serif;
+}
+body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--bg)}
+a{color:var(--indigo);text-decoration:none}
+.ic{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-card);padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0;box-sizing:border-box}
+.lbl{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--muted)}
+.ttl{font-weight:800;font-size:15px}.mut{font-size:12px;color:var(--muted);line-height:1.45}
+.big{font-family:var(--font-display);font-weight:800;line-height:1}
+.btn{height:44px;padding:0 18px;border-radius:var(--r-btn);font:800 14px var(--font-body);display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;white-space:nowrap}
+.bp{background:var(--indigo);color:#fff}.bw{background:#fff;color:var(--navy)}.bo{background:#fff;color:var(--ink);border:1px solid var(--line-2)}
+.chip{height:34px;padding:0 12px;border-radius:var(--r-chip);font-weight:800;font-size:12px;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.tag{font-size:10px;font-weight:800;padding:4px 7px;border-radius:var(--r-tag);white-space:nowrap}
+.seg{display:flex;background:#E9EBF2;border-radius:12px;padding:4px;gap:4px}
+.seg button{flex:1;height:34px;border:0;border-radius:9px;background:transparent;font:700 13px var(--font-body);color:var(--muted)}
+.seg button.on{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(18,20,43,.12)}
+.sbar{height:8px;border-radius:4px;background:var(--line);flex:1}.sbar span{display:block;height:8px;border-radius:4px}
+.l0{background:var(--heat0)}.l1{background:var(--heat1)}.l2{background:var(--heat2)}.l3{background:var(--heat3)}
+/* mentor pet (CSS only) */
+.pet{position:relative;width:60px;height:62px;flex-shrink:0}
+.pet .bd{position:absolute;left:4px;bottom:0;width:52px;height:48px;border-radius:26px 26px 22px 22px;background:var(--pet);box-shadow:inset -6px -6px 0 rgba(30,27,75,.2)}
+.pet .ey{position:absolute;top:15px;width:9px;height:11px;border-radius:5px;background:#fff}
+.pet .ey::after{content:'';position:absolute;left:2px;top:3px;width:5px;height:6px;border-radius:3px;background:var(--navy)}
+.pet .e1{left:13px}.pet .e2{left:30px}
+.pet .ck{position:absolute;top:29px;width:8px;height:4px;border-radius:2px;background:var(--pet-cheek)}
+.pet .k1{left:7px}.pet .k2{left:37px}
+.pet .mo{position:absolute;top:28px;left:21px;width:10px;height:5px;border-bottom:2px solid var(--navy);border-radius:0 0 6px 6px}
+.pet .sp{position:absolute;top:0;left:22px;width:16px;height:16px}
+.bob{animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){.bob{animation:none}}

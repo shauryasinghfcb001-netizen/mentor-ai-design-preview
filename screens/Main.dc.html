@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Today</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#4338CA;text-decoration:none}a:hover{color:#3730A3}
+.nav{position:absolute;left:0;right:0;bottom:0;height:78px;background:#FFFFFF;border-top:1px solid #E4E6EF;display:flex;align-items:flex-start;justify-content:space-around;padding-top:10px;box-sizing:border-box;z-index:3}
+.nav a{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#5B6178;width:64px;min-height:44px}
+.nav a.on{color:#4338CA}
+.nav svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.nav .mid{width:52px;height:52px;border-radius:26px;background:#4338CA;color:#FFFFFF;display:flex;align-items:center;justify-content:center;margin-top:-22px;box-shadow:0 6px 16px rgba(67,56,202,.35)}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.step{display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.07);border-radius:12px;padding:8px 10px}
+.step.dn{background:rgba(74,222,128,.12)}
+.n{width:24px;height:24px;border-radius:12px;background:#FFFFFF;color:#312E81;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step.dn .n{background:#4ADE80;color:#14532D}
+.st{flex:1;font-size:13px;font-weight:600;color:#FFFFFF}
+.st small{display:block;font-size:11px;font-weight:500;color:#C7D2FE}
+.step.dn .st{color:#BBF7D0}
+.hm{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}
+.c{height:18px;border-radius:5px}
+.l0{background:#E4E6EF}.l1{background:#C7D2FE}.l2{background:#818CF8}.l3{background:#4338CA}
+.c.today{box-shadow:0 0 0 2px #F6F7FB,0 0 0 4px #EA580C;animation:pulse 1.8s ease-in-out infinite}
+.dl{font-size:10px;font-weight:600;color:#5B6178;text-align:center}
+.blob{position:absolute;border-radius:50%;pointer-events:none}
+/* mentor pet */
+.pet{position:relative;width:60px;height:62px}
+.pet .bd{position:absolute;left:4px;bottom:0;width:52px;height:48px;border-radius:26px 26px 22px 22px;background:#6366F1;box-shadow:inset -6px -6px 0 rgba(30,27,75,.2)}
+.pet .ey{position:absolute;top:15px;width:9px;height:11px;border-radius:5px;background:#FFFFFF}
+.pet .ey::after{content:'';position:absolute;left:2px;top:3px;width:5px;height:6px;border-radius:3px;background:#1E1B4B}
+.pet .e1{left:13px}.pet .e2{left:30px}
+.pet .ck{position:absolute;top:29px;width:8px;height:4px;border-radius:2px;background:#F9A8D4}
+.pet .k1{left:7px}.pet .k2{left:37px}
+.pet .mo{position:absolute;top:28px;left:21px;width:10px;height:5px;border-bottom:2px solid #1E1B4B;border-radius:0 0 6px 6px}
+.pet .sp{position:absolute;top:0;left:22px;width:16px;height:16px}
+.bob{animation:bob 2.4s ease-in-out infinite}
+.dance{animation:dance .8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes dance{0%,100%{transform:rotate(-8deg) translateY(0)}50%{transform:rotate(8deg) translateY(-6px)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+@media (prefers-reduced-motion:reduce){.bob,.dance,.c.today{animation:none}}
+.bub{background:#FFFFFF;border:1px solid #E4E6EF;border-radius:14px 14px 4px 14px;padding:8px 11px;font-size:12px;font-weight:600;line-height:1.35;box-shadow:0 6px 18px rgba(18,20,43,.10);max-width:160px}
+.min{width:44px;height:44px;border:0;background:transparent;padding:0;display:flex;align-items:center;justify-content:center;color:#5B6178}
+.min span{width:24px;height:24px;border-radius:12px;background:#FFFFFF;border:1px solid #E4E6EF;display:flex;align-items:center;justify-content:center}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F6F7FB; font-family: 'Plus Jakarta Sans', sans-serif; color: #12142B; box-sizing: border-box">
+<div style="padding: 16px 18px 0; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px">
+<div style="flex: 1; min-width: 0">
+<div style="font-size: 12px; color: #5B6178; font-weight: 600">Mon, 5 Oct · 127 days to boards</div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 24px; font-weight: 800; letter-spacing: -0.3px">Good evening, [Name]</div>
+</div>
+<a href="Progress.dc.html" aria-label="5 day streak" style="height: 36px; padding: 0 12px; border-radius: 18px; background: #FFF7ED; border: 1px solid #FED7AA; color: #C2410C; font-weight: 800; font-size: 14px; display: flex; align-items: center; gap: 6px"><svg class="ic" viewBox="0 0 24 24" style="width: 16px; height: 16px"><path d="M12 3c1 4 5 5.5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-3.5 2-5 1 1.5 2 2 2 2s-.5-4 1-7z"></path></svg>5</a>
+<a href="Account.dc.html" aria-label="Profile" style="width: 44px; height: 44px; border-radius: 22px; background: #E0E7FF; color: #4338CA; display: flex; align-items: center; justify-content: center; font-weight: 700">S</a>
+</div>
+<div style="position: relative; overflow: hidden; background: #1E1B4B; color: #FFFFFF; border-radius: 24px; padding: 16px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 14px 30px rgba(30,27,75,.28)">
+<div class="blob" style="width: 180px; height: 180px; right: -60px; top: -70px; background: #312E81"></div>
+<div class="blob" style="width: 90px; height: 90px; right: 40px; top: 60px; background: #3730A3; opacity: 0.6"></div>
+<div style="position: relative; display: flex; gap: 14px; align-items: center">
+<div style="position: relative; width: 84px; height: 84px; flex-shrink: 0">
+<svg viewBox="0 0 84 84" width="84" height="84" style="transform: rotate(-90deg)"><circle cx="42" cy="42" r="34" fill="none" stroke="#3730A3" stroke-width="9"></circle><circle cx="42" cy="42" r="34" fill="none" stroke="{{ringColor}}" stroke-width="9" stroke-linecap="round" stroke-dasharray="213.6" stroke-dashoffset="{{ringOffset}}"></circle></svg>
+<div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center"><div style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px; font-weight: 800; line-height: 1">{{doneCount}}/3</div><div style="font-size: 10px; color: #C7D2FE; font-weight: 600">steps</div></div>
+</div>
+<div style="flex: 1; min-width: 0">
+<div style="font-size: 11px; font-weight: 700; letter-spacing: 1px; color: #A5B4FC">{{heroLabel}}</div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 20px; font-weight: 700; line-height: 1.15; margin-top: 2px">Capacitors — close the concept gap</div>
+<div style="font-size: 12px; color: #C7D2FE; margin-top: 4px">Physics · about 45 min · set by Mentor</div>
+</div>
+</div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 6px">
+<sc-for list="{{steps}}" as="s" hint-placeholder-count="3">
+<div class="{{s.cls}}">
+<span class="n">
+<sc-if value="{{s.d}}" hint-placeholder-val="{{ false }}"><svg class="ic" viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke-width: 3"><path d="M5 12l5 5 9-10"></path></svg></sc-if>
+<sc-if value="{{s.nd}}" hint-placeholder-val="{{ true }}">{{s.n}}</sc-if>
+</span>
+<span class="st">{{s.t}}<small>{{s.sub}}</small></span>
+</div>
+</sc-for>
+</div>
+<div style="position: relative; display: flex; gap: 8px">
+<sc-if value="{{notDone}}" hint-placeholder-val="{{ true }}">
+<a href="Study.dc.html" style="flex: 1; height: 48px; border-radius: 14px; background: #FFFFFF; color: #312E81; font-weight: 800; font-size: 15px; display: flex; align-items: center; justify-content: center; gap: 8px">Continue · step 2<svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a href="Mentor.dc.html" style="height: 48px; padding: 0 16px; border-radius: 14px; border: 1px solid #6366F1; color: #FFFFFF; font-weight: 600; display: flex; align-items: center; justify-content: center">Stuck?</a>
+</sc-if>
+<sc-if value="{{done}}" hint-placeholder-val="{{ false }}">
+<a href="#game" style="flex: 1; height: 48px; border-radius: 14px; background: #4ADE80; color: #14532D; font-weight: 800; font-size: 15px; display: flex; align-items: center; justify-content: center; gap: 8px">Task complete · play your game</a>
+</sc-if>
+</div>
+</div>
+<div id="game" style="background: {{gameBg}}; border: 1px solid {{gameBorder}}; border-radius: 18px; padding: 12px 14px; display: flex; gap: 12px; align-items: center">
+<div style="width: 44px; height: 44px; border-radius: 12px; background: {{gameIconBg}}; color: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg class="ic" viewBox="0 0 24 24" style="width: 22px; height: 22px"><rect x="3" y="7" width="18" height="11" rx="4"></rect><path d="M8 11v3M6.5 12.5h3M15 12h.01M17.5 13.5h.01"></path></svg></div>
+<div style="flex: 1; min-width: 0">
+<div style="font-weight: 800; font-size: 14px">Formula Match <span style="font-size: 11px; font-weight: 700; color: #5B6178">· 90 sec</span></div>
+<div style="font-size: 12px; color: #5B6178">{{gameSub}}</div>
+</div>
+<sc-if value="{{notDone}}" hint-placeholder-val="{{ true }}">
+<div aria-label="Locked" style="width: 36px; height: 36px; border-radius: 18px; background: #E4E6EF; color: #5B6178; display: flex; align-items: center; justify-content: center"><svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></div>
+</sc-if>
+<sc-if value="{{done}}" hint-placeholder-val="{{ false }}">
+<a href="Study.dc.html" style="height: 40px; padding: 0 16px; border-radius: 20px; background: #16A34A; color: #FFFFFF; font-weight: 800; font-size: 13px; display: flex; align-items: center">Play</a>
+</sc-if>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E4E6EF; border-radius: 18px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; width: 236px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<div style="font-weight: 800; font-size: 14px">Streak</div>
+<div style="font-size: 11px; color: #5B6178; font-weight: 600">Best 9 days</div>
+</div>
+<div class="hm">
+<span class="dl">M</span><span class="dl">T</span><span class="dl">W</span><span class="dl">T</span><span class="dl">F</span><span class="dl">S</span><span class="dl">S</span>
+<sc-for list="{{cells}}" as="cell" hint-placeholder-count="35">
+<span class="{{cell.cls}}"></span>
+</sc-for>
+</div>
+<div style="font-size: 11px; color: #5B6178">One square per day · darker = more done</div>
+</div>
+</div>
+<div style="position: absolute; right: 12px; bottom: 90px; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; z-index: 2">
+<div class="bub">{{petLine}}</div>
+<div style="display: flex; align-items: flex-end">
+<button type="button" class="min" aria-label="Minimise pet"><span><svg class="ic" viewBox="0 0 24 24" style="width: 12px; height: 12px; stroke-width: 2.5"><path d="M6 12h12"></path></svg></span></button>
+<a href="PetHelp.dc.html" aria-label="Open pet quick help" style="display: block">
+<div class="{{petCls}}">
+<svg class="sp" viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z" fill="#F59E0B"></path></svg>
+<div class="bd"></div><div class="ey e1"></div><div class="ey e2"></div><div class="ck k1"></div><div class="ck k2"></div><div class="mo"></div>
+</div>
+</a>
+</div>
+</div>
+<nav class="nav">
+<a href="Main.dc.html" class="on"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>Today</a>
+<a href="Plan.dc.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>Plan</a>
+<a href="Mentor.dc.html" aria-label="Mentor"><span class="mid"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path></svg></span></a>
+<a href="Study.dc.html"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 19V5"></path></svg>Study</a>
+<a href="Progress.dc.html"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>Progress</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"done":{"editor":"boolean","default":false,"section":"State"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+const done = this.props.done ?? false;
+const raw = [
+{ n: 1, t: 'Watch 12:40–24:10 of your lecture', sub: 'Notes already made', d: true },
+{ n: 2, t: '12 flashcards due', sub: 'Series vs parallel', d: done },
+{ n: 3, t: '10-question board quiz', sub: 'Wrong answers get tagged', d: done }
+];
+const steps = raw.map((s) => ({ ...s, nd: !s.d, cls: s.d ? 'step dn' : 'step' }));
+const doneCount = steps.filter((s) => s.d).length;
+const lv = [1,2,0,3,2,1,0, 2,3,3,0,1,2,0, 0,1,2,3,3,2,1, 3,2,0,1,1,2,0, 0,2,3,1,2,3];
+const cells = lv.map((l) => ({ cls: 'c l' + l }));
+cells.push({ cls: 'c today ' + (done ? 'l3' : 'l0') });
+return {
+done,
+notDone: !done,
+steps,
+doneCount,
+cells,
+ringOffset: String(213.6 * (1 - doneCount / 3)),
+ringColor: done ? '#4ADE80' : '#FFFFFF',
+heroLabel: done ? "TODAY'S TASK · DONE" : "COMPLETE TODAY'S TASK",
+gameBg: done ? '#F0FDF4' : '#FFFFFF',
+gameBorder: done ? '#86EFAC' : '#E4E6EF',
+gameIconBg: done ? '#16A34A' : '#9CA3AF',
+gameSub: done ? 'Unlocked · counts toward streak + credits' : 'Unlocks when today’s task is done',
+petLine: done ? 'Shabaash! Game unlocked.' : 'Namaste! Bas 2 steps baaki.',
+petCls: done ? 'pet dance' : 'pet bob'
+};
+}
+}
+</script>
+</body>
+</html>

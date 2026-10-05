@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Onboarding — laptop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#4338CA;text-decoration:none}a:hover{color:#3730A3}
+.ic{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.side{width:224px;background:#1E1B4B;padding:20px 14px 16px;box-sizing:border-box;display:flex;flex-direction:column;gap:3px;flex-shrink:0}
+.side a.nv{display:flex;gap:12px;align-items:center;height:42px;padding:0 12px;border-radius:12px;color:#C7D2FE;font-weight:700;font-size:14px}
+.side a.nv.on{background:#4338CA;color:#FFFFFF}
+.side a.mr{display:flex;gap:10px;align-items:center;height:34px;padding:0 12px;border-radius:10px;color:#A5B4FC;font-weight:600;font-size:13px}
+.side .sl{font-size:10px;font-weight:800;letter-spacing:1.2px;color:#818CF8;padding:14px 12px 4px}
+.top{height:64px;padding:0 28px;border-bottom:1px solid #E4E6EF;background:#FFFFFF;display:flex;align-items:center;gap:10px;box-sizing:border-box;flex-shrink:0}
+.chip{height:34px;padding:0 12px;border-radius:17px;font-weight:800;font-size:12px;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.card{background:#FFFFFF;border:1px solid #E4E6EF;border-radius:18px;padding:16px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px;min-width:0}
+.lbl{font-size:11px;font-weight:800;letter-spacing:1px;color:#5B6178}
+.ttl{font-weight:800;font-size:15px}
+.mut{font-size:12px;color:#5B6178;line-height:1.45}
+.big{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;line-height:1}
+.btn{height:44px;padding:0 18px;border-radius:12px;font-family:inherit;font-weight:800;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;box-sizing:border-box;white-space:nowrap}
+.bp{background:#4338CA;color:#FFFFFF}.bw{background:#FFFFFF;color:#1E1B4B}.bo{background:#FFFFFF;color:#12142B;border:1px solid #D5D8E4}
+.seg{display:flex;background:#E9EBF2;border-radius:12px;padding:4px;gap:4px}
+.seg button{flex:1;height:34px;border:0;border-radius:9px;background:transparent;font-family:inherit;font-weight:700;font-size:13px;color:#5B6178;padding:0 12px;white-space:nowrap}
+.seg button.on{background:#FFFFFF;color:#12142B;box-shadow:0 1px 3px rgba(18,20,43,.12)}
+.ck4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.ck4 button{height:40px;border-radius:11px;font-family:inherit;font-weight:800;font-size:13px}
+.row{display:flex;gap:10px;align-items:center}
+.sbar{height:8px;border-radius:4px;background:#E4E6EF;flex:1}
+.sbar span{display:block;height:8px;border-radius:4px}
+.tag{font-size:10px;font-weight:800;padding:4px 7px;border-radius:7px;white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:4px;flex-shrink:0;display:block}
+.l0{background:#E4E6EF}.l1{background:#C7D2FE}.l2{background:#818CF8}.l3{background:#4338CA}
+.blob{position:absolute;border-radius:50%;pointer-events:none}
+.pet{position:relative;width:60px;height:62px;flex-shrink:0}
+.pet .bd{position:absolute;left:4px;bottom:0;width:52px;height:48px;border-radius:26px 26px 22px 22px;background:#6366F1;box-shadow:inset -6px -6px 0 rgba(30,27,75,.2)}
+.pet .ey{position:absolute;top:15px;width:9px;height:11px;border-radius:5px;background:#FFFFFF}
+.pet .ey::after{content:'';position:absolute;left:2px;top:3px;width:5px;height:6px;border-radius:3px;background:#1E1B4B}
+.pet .e1{left:13px}.pet .e2{left:30px}
+.pet .ck{position:absolute;top:29px;width:8px;height:4px;border-radius:2px;background:#F9A8D4}
+.pet .k1{left:7px}.pet .k2{left:37px}
+.pet .mo{position:absolute;top:28px;left:21px;width:10px;height:5px;border-bottom:2px solid #1E1B4B;border-radius:0 0 6px 6px}
+.pet .sp{position:absolute;top:0;left:22px;width:16px;height:16px}
+.bob{animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){.bob{animation:none}}
+</style>
+</helmet>
+<div style="width: 1280px; height: 800px; position: relative; overflow: hidden; background: #FFFFFF; font-family: 'Plus Jakarta Sans', sans-serif; color: #12142B; display: flex">
+<div style="width: 340px; background: #1E1B4B; color: #FFFFFF; padding: 32px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 6px">
+<div class="row" style="gap: 10px; padding: 0 10px 26px"><div style="width: 34px; height: 34px; border-radius: 10px; background: #4338CA; display: flex; align-items: center; justify-content: center"><svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path></svg></div><span class="big" style="font-size: 20px">Mentor.ai</span></div>
+<div style="font-size: 11px; font-weight: 800; letter-spacing: 1px; color: #A5B4FC; padding: 0 10px 8px">SET UP · ABOUT 1 MINUTE</div>
+<div class="row" style="gap: 12px; padding: 8px 10px; border-radius: 12px; "><span style="width: 28px; height: 28px; border-radius: 14px; background: #4ADE80; color: #14532D; display: flex; align-items: center; justify-content: center"><svg class="ic" viewBox="0 0 24 24" style="width: 14px; height: 14px"><path d="M5 12l5 5 9-10"></path></svg></span><div style="font-size: 14px; font-weight: 700; color: #FFFFFF">Your name<div style="font-size: 11px; color: #A5B4FC; font-weight: 600">Aarav</div></div></div><div class="row" style="gap: 12px; padding: 8px 10px; border-radius: 12px; background: #312E81"><span style="width: 28px; height: 28px; border-radius: 14px; background: #FFFFFF; color: #1E1B4B; font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center">2</span><div style="font-size: 14px; font-weight: 700; color: #FFFFFF">What you study for<div style="font-size: 11px; color: #A5B4FC; font-weight: 600">Class 10, 12 or just study</div></div></div><div class="row" style="gap: 12px; padding: 8px 10px; border-radius: 12px; "><span style="width: 28px; height: 28px; border-radius: 14px; border: 2px solid #4338CA; color: #A5B4FC; font-weight: 800; font-size: 12px; display: flex; align-items: center; justify-content: center; box-sizing: border-box">3</span><div style="font-size: 14px; font-weight: 700; color: #A5B4FC">Subjects<div style="font-size: 11px; color: #A5B4FC; font-weight: 600"></div></div></div><div class="row" style="gap: 12px; padding: 8px 10px; border-radius: 12px; "><span style="width: 28px; height: 28px; border-radius: 14px; border: 2px solid #4338CA; color: #A5B4FC; font-weight: 800; font-size: 12px; display: flex; align-items: center; justify-content: center; box-sizing: border-box">4</span><div style="font-size: 14px; font-weight: 700; color: #A5B4FC">Board exam date<div style="font-size: 11px; color: #A5B4FC; font-weight: 600"></div></div></div><div class="row" style="gap: 12px; padding: 8px 10px; border-radius: 12px; "><span style="width: 28px; height: 28px; border-radius: 14px; border: 2px solid #4338CA; color: #A5B4FC; font-weight: 800; font-size: 12px; display: flex; align-items: center; justify-content: center; box-sizing: border-box">5</span><div style="font-size: 14px; font-weight: 700; color: #A5B4FC">Last test marks<div style="font-size: 11px; color: #A5B4FC; font-weight: 600"></div></div></div><div class="row" style="gap: 12px; padding: 8px 10px; border-radius: 12px; "><span style="width: 28px; height: 28px; border-radius: 14px; border: 2px solid #4338CA; color: #A5B4FC; font-weight: 800; font-size: 12px; display: flex; align-items: center; justify-content: center; box-sizing: border-box">6</span><div style="font-size: 14px; font-weight: 700; color: #A5B4FC">Mentor's language<div style="font-size: 11px; color: #A5B4FC; font-weight: 600"></div></div></div>
+<div class="row" style="margin-top: auto; align-items: flex-end; gap: 10px; padding: 0 10px">
+<div class="pet bob"><svg class="sp" viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z" fill="#F59E0B"></path></svg><div class="bd"></div><div class="ey e1"></div><div class="ey e2"></div><div class="ck k1"></div><div class="ck k2"></div><div class="mo"></div></div>
+<div style="background: #FFFFFF; color: #12142B; border-radius: 12px 12px 12px 4px; padding: 9px 12px; font-size: 12px; font-weight: 700; margin-bottom: 26px">Nothing here is permanent. Change it anytime.</div>
+</div>
+</div>
+<div style="flex: 1; padding: 48px 56px; display: flex; flex-direction: column; gap: 24px; box-sizing: border-box">
+<div><div class="mut" style="font-size: 13px; font-weight: 700">Step 2 of 6</div><div class="big" style="font-size: 34px; margin-top: 6px">What are you studying for, Aarav?</div><div class="mut" style="font-size: 14px; margin-top: 6px">I shape your whole plan around this.</div></div>
+<div class="row" style="gap: 16px; align-items: stretch">
+<button type="button" style="flex: 1; text-align: left; font-family: inherit; color: #12142B; background: #FFFFFF; border: 1px solid #D5D8E4; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 12px; position: relative">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #F1F2F6; color: #4338CA; display: flex; align-items: center; justify-content: center"><svg class="ic" viewBox="0 0 24 24" style="width: 24px; height: 24px"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 19V5"></path></svg></span>
+<span class="big" style="font-size: 22px">Class 10</span><span class="mut" style="font-size: 13px">CBSE board exam prep</span>
+<span style="display: flex; gap: 6px; flex-wrap: wrap"><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">Maths</span><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">Science</span><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">SST</span><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">English</span></span></button>
+<button type="button" style="flex: 1; text-align: left; font-family: inherit; color: #12142B; background: #EEF2FF; border: 2px solid #4338CA; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 12px; position: relative">
+<span class="tag" style="position: absolute; top: 16px; right: 16px; background: #4338CA; color: #FFFFFF">MOST STUDENTS</span><span style="width: 48px; height: 48px; border-radius: 14px; background: #4338CA; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg class="ic" viewBox="0 0 24 24" style="width: 24px; height: 24px"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg></span>
+<span class="big" style="font-size: 22px">Class 12</span><span class="mut" style="font-size: 13px">CBSE board exam prep</span>
+<span style="display: flex; gap: 6px; flex-wrap: wrap"><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">PCM</span><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">PCB</span><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">Commerce</span><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">Humanities</span></span></button>
+<button type="button" style="flex: 1; text-align: left; font-family: inherit; color: #12142B; background: #FFFFFF; border: 1px solid #D5D8E4; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 12px; position: relative">
+<span style="width: 48px; height: 48px; border-radius: 14px; background: #F1F2F6; color: #4338CA; display: flex; align-items: center; justify-content: center"><svg class="ic" viewBox="0 0 24 24" style="width: 24px; height: 24px"><path d="M13 2L4 14h7l-1 8 9-12h-7z"></path></svg></span>
+<span class="big" style="font-size: 22px">Just study</span><span class="mut" style="font-size: 13px">Any learner, any subject</span>
+<span style="display: flex; gap: 6px; flex-wrap: wrap"><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">College</span><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">Skills</span><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">Competitive</span><span class="tag" style="background: #FFFFFF; color: #3730A3; border: 1px solid #C7D2FE">Other</span></span></button>
+</div>
+<div class="card" style="background: #F6F7FB; border-color: #E4E6EF; gap: 12px">
+<div class="row"><span class="lbl">NEXT, FOR CLASS 12</span><span class="mut">The rest of setup changes with your choice</span></div>
+<div class="row" style="gap: 8px; flex-wrap: wrap"><span class="tag" style="background: #4338CA; color: #FFFFFF; padding: 8px 12px">Physics</span><span class="tag" style="background: #4338CA; color: #FFFFFF; padding: 8px 12px">Chemistry</span><span class="tag" style="background: #4338CA; color: #FFFFFF; padding: 8px 12px">Maths</span><span class="tag" style="background: #FFFFFF; color: #12142B; border: 1px solid #D5D8E4; padding: 8px 12px">Biology</span><span class="tag" style="background: #FFFFFF; color: #12142B; border: 1px solid #D5D8E4; padding: 8px 12px">English</span><span class="mut" style="margin-left: 8px">· board date · last test marks · language</span></div>
+</div>
+<div class="row" style="margin-top: auto"><a href="DesktopSignIn.dc.html" class="btn bo" style="height: 50px; width: 120px">Back</a><a href="DesktopToday.dc.html" class="btn bp" style="height: 50px; margin-left: auto; width: 220px">Next <svg class="ic" viewBox="0 0 24 24" style="width: 16px; height: 16px"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

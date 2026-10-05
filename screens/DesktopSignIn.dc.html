@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Parent sign-in — laptop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#4338CA;text-decoration:none}a:hover{color:#3730A3}
+.ic{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.side{width:224px;background:#1E1B4B;padding:20px 14px 16px;box-sizing:border-box;display:flex;flex-direction:column;gap:3px;flex-shrink:0}
+.side a.nv{display:flex;gap:12px;align-items:center;height:42px;padding:0 12px;border-radius:12px;color:#C7D2FE;font-weight:700;font-size:14px}
+.side a.nv.on{background:#4338CA;color:#FFFFFF}
+.side a.mr{display:flex;gap:10px;align-items:center;height:34px;padding:0 12px;border-radius:10px;color:#A5B4FC;font-weight:600;font-size:13px}
+.side .sl{font-size:10px;font-weight:800;letter-spacing:1.2px;color:#818CF8;padding:14px 12px 4px}
+.top{height:64px;padding:0 28px;border-bottom:1px solid #E4E6EF;background:#FFFFFF;display:flex;align-items:center;gap:10px;box-sizing:border-box;flex-shrink:0}
+.chip{height:34px;padding:0 12px;border-radius:17px;font-weight:800;font-size:12px;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.card{background:#FFFFFF;border:1px solid #E4E6EF;border-radius:18px;padding:16px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px;min-width:0}
+.lbl{font-size:11px;font-weight:800;letter-spacing:1px;color:#5B6178}
+.ttl{font-weight:800;font-size:15px}
+.mut{font-size:12px;color:#5B6178;line-height:1.45}
+.big{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;line-height:1}
+.btn{height:44px;padding:0 18px;border-radius:12px;font-family:inherit;font-weight:800;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;box-sizing:border-box;white-space:nowrap}
+.bp{background:#4338CA;color:#FFFFFF}.bw{background:#FFFFFF;color:#1E1B4B}.bo{background:#FFFFFF;color:#12142B;border:1px solid #D5D8E4}
+.seg{display:flex;background:#E9EBF2;border-radius:12px;padding:4px;gap:4px}
+.seg button{flex:1;height:34px;border:0;border-radius:9px;background:transparent;font-family:inherit;font-weight:700;font-size:13px;color:#5B6178;padding:0 12px;white-space:nowrap}
+.seg button.on{background:#FFFFFF;color:#12142B;box-shadow:0 1px 3px rgba(18,20,43,.12)}
+.ck4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.ck4 button{height:40px;border-radius:11px;font-family:inherit;font-weight:800;font-size:13px}
+.row{display:flex;gap:10px;align-items:center}
+.sbar{height:8px;border-radius:4px;background:#E4E6EF;flex:1}
+.sbar span{display:block;height:8px;border-radius:4px}
+.tag{font-size:10px;font-weight:800;padding:4px 7px;border-radius:7px;white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:4px;flex-shrink:0;display:block}
+.l0{background:#E4E6EF}.l1{background:#C7D2FE}.l2{background:#818CF8}.l3{background:#4338CA}
+.blob{position:absolute;border-radius:50%;pointer-events:none}
+.pet{position:relative;width:60px;height:62px;flex-shrink:0}
+.pet .bd{position:absolute;left:4px;bottom:0;width:52px;height:48px;border-radius:26px 26px 22px 22px;background:#6366F1;box-shadow:inset -6px -6px 0 rgba(30,27,75,.2)}
+.pet .ey{position:absolute;top:15px;width:9px;height:11px;border-radius:5px;background:#FFFFFF}
+.pet .ey::after{content:'';position:absolute;left:2px;top:3px;width:5px;height:6px;border-radius:3px;background:#1E1B4B}
+.pet .e1{left:13px}.pet .e2{left:30px}
+.pet .ck{position:absolute;top:29px;width:8px;height:4px;border-radius:2px;background:#F9A8D4}
+.pet .k1{left:7px}.pet .k2{left:37px}
+.pet .mo{position:absolute;top:28px;left:21px;width:10px;height:5px;border-bottom:2px solid #1E1B4B;border-radius:0 0 6px 6px}
+.pet .sp{position:absolute;top:0;left:22px;width:16px;height:16px}
+.bob{animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){.bob{animation:none}}
+</style>
+</helmet>
+<div style="width: 1280px; height: 800px; position: relative; overflow: hidden; background: #FFFFFF; font-family: 'Plus Jakarta Sans', sans-serif; color: #12142B; display: flex">
+<div style="width: 560px; background: #1E1B4B; color: #FFFFFF; padding: 48px 52px; box-sizing: border-box; display: flex; flex-direction: column; gap: 22px; position: relative; overflow: hidden">
+<div class="blob" style="width: 420px; height: 420px; right: -180px; bottom: -160px; background: #312E81"></div>
+<div class="row" style="gap: 10px; position: relative"><div style="width: 38px; height: 38px; border-radius: 11px; background: #4338CA; display: flex; align-items: center; justify-content: center"><svg class="ic" viewBox="0 0 24 24" style="width: 20px; height: 20px"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path></svg></div><span class="big" style="font-size: 22px">Mentor.ai</span></div>
+<div class="big" style="font-size: 44px; line-height: 1.08; letter-spacing: -0.8px; margin-top: 40px; position: relative">A mentor that tells your child what to study today.</div>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #E0E7FF; position: relative">
+<div class="row"><svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px"><path d="M5 12l5 5 9-10"></path></svg>A daily plan built around board weightage</div>
+<div class="row"><svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px"><path d="M5 12l5 5 9-10"></path></svg>Hinglish mentor that knows their weak chapters</div>
+<div class="row"><svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px"><path d="M5 12l5 5 9-10"></path></svg>Weekly report to you on WhatsApp</div>
+</div>
+<div class="row" style="margin-top: auto; gap: 12px; position: relative; align-items: flex-end">
+<div style="transform: scale(1.4); transform-origin: left bottom; margin-right: 26px"><div class="pet bob"><svg class="sp" viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z" fill="#F59E0B"></path></svg><div class="bd"></div><div class="ey e1"></div><div class="ey e2"></div><div class="ck k1"></div><div class="ck k2"></div><div class="mo"></div></div></div>
+<div style="background: #FFFFFF; color: #12142B; border-radius: 14px 14px 14px 4px; padding: 10px 14px; font-size: 13px; font-weight: 700; margin-bottom: 30px">Namaste! Parents first, then I meet your child.</div>
+</div>
+</div>
+<div style="flex: 1; display: flex; align-items: center; justify-content: center">
+<div style="width: 420px; display: flex; flex-direction: column; gap: 20px">
+<div><div class="big" style="font-size: 30px">Parent sign-in</div><div class="mut" style="font-size: 14px; margin-top: 6px">Your child gets their own login right after.</div></div>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700">Parent's mobile number
+<span style="display: flex; height: 54px; background: #FFFFFF; border: 1px solid #D5D8E4; border-radius: 14px; overflow: hidden"><span style="width: 64px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #E4E6EF; font-weight: 800">+91</span><input type="tel" placeholder="98xxx xxxxx" style="flex: 1; border: 0; outline: 0; padding: 0 14px; font-family: inherit; font-size: 16px; background: transparent"></span></label>
+<label style="display: flex; gap: 12px; align-items: flex-start; font-size: 13px; line-height: 1.5"><input type="checkbox" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #4338CA; flex-shrink: 0"><span>I am the parent or guardian. I allow Mentor.ai to store my child's study data to build their plan, and I can delete it anytime. <a href="#">Privacy</a> · <a href="#">Terms</a></span></label>
+<a href="DesktopOnboarding.dc.html" class="btn bp" style="height: 54px; font-size: 16px"><svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px"><path d="M4 20l1.5-4A8 8 0 1 1 8 18.5z"></path></svg>Send OTP on WhatsApp</a>
+<div class="mut" style="text-align: center; margin-top: -8px">No WhatsApp? We'll send an SMS.</div>
+<div class="card" style="background: #F6F7FB; font-size: 12px; color: #5B6178; line-height: 1.5">No ads to students. No tracking outside the app. Weekly progress goes to you on WhatsApp.</div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Account.dc.html": {
+      "h": 844,
+      "title": "D \u00b7 Account + Pro",
+      "w": 390,
+      "x": 470,
+      "y": 2460
+    },
+    "AnswerReview.dc.html": {
+      "h": 844,
+      "title": "C \u00b7 Answer review (Pro)",
+      "w": 390,
+      "x": 0,
+      "y": 2460
+    },
+    "Login.dc.html": {
+      "h": 844,
+      "title": "A \u00b7 Parent sign-in + consent",
+      "w": 390,
+      "x": 0,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "h": 844,
+      "title": "1 \u00b7 Today",
+      "w": 390,
+      "x": 0,
+      "y": 1230
+    },
+    "Mentor.dc.html": {
+      "h": 844,
+      "title": "3 \u00b7 Mentor",
+      "w": 390,
+      "x": 940,
+      "y": 1230
+    },
+    "Onboarding.dc.html": {
+      "h": 844,
+      "title": "B \u00b7 Onboarding",
+      "w": 390,
+      "x": 470,
+      "y": 0
+    },
+    "ParentReport.dc.html": {
+      "h": 1240,
+      "title": "E \u00b7 Weekly parent report",
+      "w": 390,
+      "x": 940,
+      "y": 2460
+    },
+    "Plan.dc.html": {
+      "h": 844,
+      "title": "2 \u00b7 Plan",
+      "w": 390,
+      "x": 470,
+      "y": 1230
+    },
+    "Progress.dc.html": {
+      "h": 844,
+      "title": "5 \u00b7 Progress",
+      "w": 390,
+      "x": 1880,
+      "y": 1230
+    },
+    "PetHelp.dc.html": {
+      "h": 844,
+      "title": "F \u00b7 Pet quick help (tap)",
+      "w": 390,
+      "x": 0,
+      "y": 4060
+    },
+    "PetStates.dc.html": {
+      "h": 400,
+      "title": "G \u00b7 Pet states",
+      "w": 900,
+      "x": 470,
+      "y": 4060
+    },
+    "Study.dc.html": {
+      "h": 844,
+      "title": "4 \u00b7 Study (tools)",
+      "w": 390,
+      "x": 1410,
+      "y": 1230
+    },
+    "DesktopToday.dc.html": {
+      "x": 0,
+      "y": 6210,
+      "w": 1280,
+      "h": 800,
+      "title": "H1 \u00b7 Laptop \u00b7 Today",
+      "is_interactive": true
+    },
+    "DesktopPlan.dc.html": {
+      "x": 1360,
+      "y": 6210,
+      "w": 1280,
+      "h": 800,
+      "title": "H2 \u00b7 Laptop \u00b7 Plan",
+      "is_interactive": true
+    },
+    "DesktopPractice.dc.html": {
+      "x": 0,
+      "y": 7130,
+      "w": 1280,
+      "h": 800,
+      "title": "H3 \u00b7 Laptop \u00b7 Practice",
+      "is_interactive": true
+    },
+    "DesktopProgress.dc.html": {
+      "x": 0,
+      "y": 8050,
+      "w": 1280,
+      "h": 800,
+      "title": "H5 \u00b7 Laptop \u00b7 Progress",
+      "is_interactive": true
+    },
+    "DesktopMentor.dc.html": {
+      "x": 1360,
+      "y": 8050,
+      "w": 1280,
+      "h": 800,
+      "title": "H6 \u00b7 Laptop \u00b7 Mentor",
+      "is_interactive": true
+    },
+    "DesktopBadges.dc.html": {
+      "x": 0,
+      "y": 8970,
+      "w": 1280,
+      "h": 800,
+      "title": "H7 \u00b7 Laptop \u00b7 Badges + certificates",
+      "is_interactive": true
+    },
+    "Badges.dc.html": {
+      "x": 1410,
+      "y": 2460,
+      "w": 390,
+      "h": 844,
+      "title": "F2 \u00b7 Badges + certificates"
+    },
+    "DesktopSignIn.dc.html": {
+      "x": 0,
+      "y": 5290,
+      "w": 1280,
+      "h": 800,
+      "title": "H0a \u00b7 Laptop \u00b7 Parent sign-in",
+      "is_interactive": true
+    },
+    "DesktopOnboarding.dc.html": {
+      "x": 1360,
+      "y": 5290,
+      "w": 1280,
+      "h": 800,
+      "title": "H0b \u00b7 Laptop \u00b7 Onboarding (3 paths)",
+      "is_interactive": true
+    },
+    "DesktopStudy.dc.html": {
+      "x": 1360,
+      "y": 7130,
+      "w": 1280,
+      "h": 800,
+      "title": "H4 \u00b7 Laptop \u00b7 Study",
+      "is_interactive": true
+    },
+    "DesktopProfile.dc.html": {
+      "x": 1360,
+      "y": 8970,
+      "w": 1280,
+      "h": 800,
+      "title": "H8 \u00b7 Laptop \u00b7 Profile",
+      "is_interactive": true
+    },
+    "DesktopAnswerReview.dc.html": {
+      "x": 0,
+      "y": 9890,
+      "w": 1280,
+      "h": 800,
+      "title": "H9 \u00b7 Laptop \u00b7 Answer review",
+      "is_interactive": true
+    },
+    "DesktopParentReport.dc.html": {
+      "x": 1360,
+      "y": 9890,
+      "w": 1280,
+      "h": 800,
+      "title": "H10 \u00b7 Laptop \u00b7 Weekly parent report",
+      "is_interactive": true
+    },
+    "DesktopSkills.dc.html": {
+      "x": 0,
+      "y": 10810,
+      "w": 1280,
+      "h": 800,
+      "title": "H11 \u00b7 Laptop \u00b7 Skills",
+      "is_interactive": true
+    },
+    "Skills.dc.html": {
+      "x": 1880,
+      "y": 2460,
+      "w": 390,
+      "h": 844,
+      "title": "F3 \u00b7 Skills (phone)"
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-05T01:10:00+05:30",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "t0": {
+      "kind": "title1",
+      "maxW": 860,
+      "text": "Sign-up: parent first",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    },
+    "t1": {
+      "kind": "title1",
+      "maxW": 2270,
+      "text": "Student app: 5 tabs, one job each",
+      "w": 240,
+      "x": 0,
+      "y": 970
+    },
+    "t2": {
+      "kind": "title1",
+      "maxW": 1800,
+      "text": "Deeper screens + parent view",
+      "w": 240,
+      "x": 0,
+      "y": 2200
+    },
+    "t3": {
+      "kind": "title1",
+      "maxW": 1370,
+      "text": "Mentor pet (new)",
+      "w": 240,
+      "x": 0,
+      "y": 3800
+    },
+    "t4": {
+      "kind": "title1",
+      "maxW": 2640,
+      "text": "Laptop: sidebar + pet, every tab filled",
+      "w": 240,
+      "x": 0,
+      "y": 5030
+    }
+  },
+  "order": [
+    "Login.dc.html",
+    "Onboarding.dc.html",
+    "Main.dc.html",
+    "Plan.dc.html",
+    "Mentor.dc.html",
+    "Study.dc.html",
+    "Progress.dc.html",
+    "AnswerReview.dc.html",
+    "Account.dc.html",
+    "ParentReport.dc.html",
+    "PetHelp.dc.html",
+    "PetStates.dc.html",
+    "DesktopToday.dc.html",
+    "DesktopPlan.dc.html",
+    "DesktopPractice.dc.html",
+    "DesktopProgress.dc.html",
+    "DesktopMentor.dc.html",
+    "DesktopBadges.dc.html",
+    "Badges.dc.html",
+    "DesktopSignIn.dc.html",
+    "DesktopOnboarding.dc.html",
+    "DesktopStudy.dc.html",
+    "DesktopProfile.dc.html",
+    "DesktopAnswerReview.dc.html",
+    "DesktopParentReport.dc.html",
+    "DesktopSkills.dc.html",
+    "Skills.dc.html"
+  ],
+  "pages": [],
+  "title": "Mentor.ai Mobile Layout"
+}

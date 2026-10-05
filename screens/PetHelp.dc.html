@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pet quick help</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#4338CA;text-decoration:none}a:hover{color:#3730A3}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sk{background:#E4E6EF;border-radius:14px}
+.opt{width:100%;min-height:60px;border:1px solid #E4E6EF;background:#FFFFFF;border-radius:16px;padding:10px 14px;display:flex;gap:12px;align-items:center;text-align:left;font-family:inherit;color:#12142B;box-sizing:border-box}
+.opt .oi{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.opt b{display:block;font-size:14px}
+.opt small{display:block;font-size:12px;color:#5B6178;font-weight:500;margin-top:2px}
+.pet{position:relative;width:60px;height:62px}
+.pet .bd{position:absolute;left:4px;bottom:0;width:52px;height:48px;border-radius:26px 26px 22px 22px;background:#6366F1;box-shadow:inset -6px -6px 0 rgba(30,27,75,.2)}
+.pet .ey{position:absolute;top:15px;width:9px;height:11px;border-radius:5px;background:#FFFFFF}
+.pet .ey::after{content:'';position:absolute;left:2px;top:3px;width:5px;height:6px;border-radius:3px;background:#1E1B4B}
+.pet .e1{left:13px}.pet .e2{left:30px}
+.pet .ck{position:absolute;top:29px;width:8px;height:4px;border-radius:2px;background:#F9A8D4}
+.pet .k1{left:7px}.pet .k2{left:37px}
+.pet .mo{position:absolute;top:28px;left:21px;width:10px;height:5px;border-bottom:2px solid #1E1B4B;border-radius:0 0 6px 6px}
+.pet .sp{position:absolute;top:0;left:22px;width:16px;height:16px}
+.pet .arm{position:absolute;right:-4px;top:16px;width:10px;height:22px;border-radius:5px;background:#6366F1;transform-origin:50% 100%;animation:wave .6s ease-in-out infinite alternate}
+@keyframes wave{from{transform:rotate(10deg)}to{transform:rotate(45deg)}}
+@media (prefers-reduced-motion:reduce){.pet .arm{animation:none}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F6F7FB; font-family: 'Plus Jakarta Sans', sans-serif; color: #12142B; box-sizing: border-box">
+<div aria-hidden="true" style="padding: 20px; display: flex; flex-direction: column; gap: 12px">
+<div class="sk" style="height: 28px; width: 180px"></div>
+<div class="sk" style="height: 120px"></div>
+<div class="sk" style="height: 80px"></div>
+<div class="sk" style="height: 80px"></div>
+<div class="sk" style="height: 80px"></div>
+</div>
+<div style="position: absolute; inset: 0; background: rgba(18,20,43,.45)"></div>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; background: #F6F7FB; border-radius: 26px 26px 0 0; padding: 14px 18px 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 40px; height: 4px; border-radius: 2px; background: #C9CCD8; align-self: center"></div>
+<div style="display: flex; gap: 14px; align-items: center">
+<div class="pet" style="transform: scale(1.25); transform-origin: left center; margin-right: 14px">
+<svg class="sp" viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z" fill="#F59E0B"></path></svg>
+<div class="arm"></div><div class="bd"></div><div class="ey e1"></div><div class="ey e2"></div><div class="ck k1"></div><div class="ck k2"></div><div class="mo"></div>
+</div>
+<div style="flex: 1">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 21px; font-weight: 800">Hi [Name]! Kya help chahiye?</div>
+<div style="font-size: 12px; color: #5B6178; font-weight: 600">You're on <b style="color: #12142B">Plan</b></div>
+</div>
+</div>
+<button type="button" class="opt"><span class="oi" style="background: #E0E7FF; color: #4338CA"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .8-1 1.5V14M12 17h.01"></path></svg></span><span style="flex: 1"><b>What do I do here?</b><small>30-sec tour of this tab</small></span></button>
+<button type="button" class="opt" style="border-color: #A5B4FC; background: #EEF2FF"><span class="oi" style="background: #4338CA; color: #FFFFFF"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path></svg></span><span style="flex: 1"><b>Do it for me</b><small>Mentor reshuffles today's plan — you approve before it saves</small></span></button>
+<a href="Mentor.dc.html" class="opt"><span class="oi" style="background: #F0FDF4; color: #15803D"><svg class="ic" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"></path></svg></span><span style="flex: 1"><b>Open Mentor chat</b><small>Hindi ya English, kuch bhi pucho</small></span><svg class="ic" viewBox="0 0 24 24" style="color: #5B6178"><path d="M9 6l6 6-6 6"></path></svg></a>
+<div style="display: flex; gap: 8px">
+<button type="button" style="flex: 1; height: 44px; border-radius: 12px; border: 1px solid #E4E6EF; background: #FFFFFF; font-family: inherit; font-weight: 700; font-size: 13px; color: #12142B">Minimise to a dot</button>
+<button type="button" style="flex: 1; height: 44px; border-radius: 12px; border: 1px solid #E4E6EF; background: #FFFFFF; font-family: inherit; font-weight: 700; font-size: 13px; color: #12142B">Hide for today</button>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

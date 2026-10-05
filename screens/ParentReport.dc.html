@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Parent weekly report</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#4338CA;text-decoration:none}a:hover{color:#3730A3}
+.ic{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card{background:#FFFFFF;border:1px solid #E4E6EF;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.h{font-size:11px;font-weight:800;letter-spacing:1px;color:#5B6178}
+.st{background:#FFFFFF;border:1px solid #E4E6EF;border-radius:16px;padding:12px 10px;display:flex;flex-direction:column;gap:1px;font-size:11px;color:#5B6178;font-weight:600}
+.st b{font-family:'Bricolage Grotesque',sans-serif;font-size:22px;color:#12142B}
+.st em{font-style:normal;font-size:11px;font-weight:800}
+.bars{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;align-items:end;height:96px}
+.bar{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:10px;font-weight:700;color:#5B6178;height:100%;justify-content:flex-end}
+.bar span{width:100%;border-radius:6px 6px 3px 3px;background:#4338CA}
+.bar.off span{background:#E4E6EF}
+.gr{display:flex;align-items:center;gap:10px;font-size:13px;padding:8px 0;border-bottom:1px solid #EEF0F5}
+.gr:last-child{border-bottom:0;padding-bottom:0}
+.gr .nm{flex:1;font-weight:700}
+.gr .nm small{display:block;font-size:11px;color:#5B6178;font-weight:500}
+.gr .sc{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:16px;width:52px;text-align:right}
+.gr .tr{font-size:11px;font-weight:800;width:44px;text-align:right}
+.gd{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;flex-shrink:0}
+.note{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.45}
+.note .ni{width:30px;height:30px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.note b{display:block;font-size:11px;letter-spacing:1px;margin-bottom:1px}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 1240px; position: relative; background: #F6F7FB; font-family: 'Plus Jakarta Sans', sans-serif; color: #12142B; box-sizing: border-box; display: flex; flex-direction: column">
+<div style="background: #1E1B4B; color: #FFFFFF; padding: 20px 18px 56px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div style="font-size: 11px; font-weight: 800; letter-spacing: 1.2px; color: #A5B4FC">MENTOR.AI · FOR PARENTS</div>
+<div style="font-size: 11px; font-weight: 700; color: #C7D2FE">Week 3 of 18</div>
+</div>
+<div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 28px; font-weight: 800; line-height: 1.1">[Child's name] had a strong week.</div>
+<div style="font-size: 13px; color: #C7D2FE; margin-top: 6px">[week dates] · Class 12 · CBSE</div>
+</div>
+<div style="display: flex; gap: 12px; align-items: center; background: #312E81; border-radius: 16px; padding: 12px 14px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #4ADE80; color: #14532D; font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0">A</div>
+<div style="flex: 1; font-size: 13px; line-height: 1.4; color: #E0E7FF"><b style="color: #FFFFFF; font-size: 14px">Week grade: A</b><br>Plan followed 5 of 7 days. Average test score up 6 points.</div>
+</div>
+</div>
+<div style="padding: 0 16px 24px; margin-top: -36px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div class="st" style="box-shadow: 0 8px 20px rgba(30,27,75,.10)"><b>5/7</b>days studied<em style="color: #15803D">+1 vs last wk</em></div>
+<div class="st" style="box-shadow: 0 8px 20px rgba(30,27,75,.10)"><b>7h 40m</b>focus time<em style="color: #15803D">+55 min</em></div>
+<div class="st" style="box-shadow: 0 8px 20px rgba(30,27,75,.10)"><b style="color: #4338CA">84–89</b>predicted %<em style="color: #15803D">was 81–86</em></div>
+</div>
+<div class="card">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span class="h">STUDY TIME · MINUTES</span><span style="font-size: 11px; color: #5B6178; font-weight: 600">Goal 60/day</span></div>
+<div style="position: relative">
+<div style="position: absolute; left: 0; right: 0; top: 30px; border-top: 1px dashed #A5B4FC"></div>
+<div class="bars">
+<div class="bar"><span style="height: 72px"></span>M</div>
+<div class="bar"><span style="height: 58px"></span>T</div>
+<div class="bar off"><span style="height: 6px"></span>W</div>
+<div class="bar"><span style="height: 80px"></span>T</div>
+<div class="bar"><span style="height: 64px"></span>F</div>
+<div class="bar off"><span style="height: 6px"></span>S</div>
+<div class="bar"><span style="height: 76px; background: #16A34A"></span>S</div>
+</div>
+</div>
+<div style="font-size: 12px; color: #5B6178">Sunday's bar is the Physics mock test.</div>
+</div>
+<div class="card">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span class="h">GRADES THIS WEEK</span><span style="font-size: 11px; color: #5B6178; font-weight: 600">Board-pattern tests</span></div>
+<div>
+<div class="gr"><span class="gd" style="background: #DCFCE7; color: #15803D">A</span><span class="nm">Chemistry · Solutions<small>Chapter quiz · 20 marks</small></span><span class="sc">18/20</span><span class="tr" style="color: #15803D">▲ 8%</span></div>
+<div class="gr"><span class="gd" style="background: #E0E7FF; color: #3730A3">B+</span><span class="nm">Physics · Mock test<small>Full paper · 70 marks</small></span><span class="sc">56/70</span><span class="tr" style="color: #15803D">▲ 4%</span></div>
+<div class="gr"><span class="gd" style="background: #E0E7FF; color: #3730A3">B</span><span class="nm">Maths · Integrals<small>Practice set · 25 marks</small></span><span class="sc">19/25</span><span class="tr" style="color: #5B6178">— 0%</span></div>
+<div class="gr"><span class="gd" style="background: #FFEDD5; color: #9A3412">C</span><span class="nm">Physics · Capacitors<small>Quiz · 10 marks</small></span><span class="sc">6/10</span><span class="tr" style="color: #C2410C">▼ 5%</span></div>
+</div>
+</div>
+<div class="card" style="flex-direction: row; align-items: center; gap: 12px">
+<div style="width: 48px; height: 48px; border-radius: 14px; background: #EEF2FF; color: #4338CA; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg class="ic" viewBox="0 0 24 24" style="width: 22px; height: 22px"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path></svg></div>
+<div style="flex: 1"><div style="font-weight: 800; font-size: 15px">+120 credits · 1 new badge</div><div style="font-size: 12px; color: #5B6178">"5-day streak" earned on Saturday</div></div>
+</div>
+<div class="card" style="gap: 14px">
+<span class="h">MENTOR'S NOTE</span>
+<div class="note"><span class="ni" style="background: #DCFCE7; color: #15803D"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg></span><span><b style="color: #15803D">GOING WELL</b>Solutions (Chemistry) up 8%. Revision is sticking.</span></div>
+<div class="note"><span class="ni" style="background: #FFEDD5; color: #C2410C"><svg class="ic" viewBox="0 0 24 24"><path d="M12 8v5M12 16.5v.5"></path><circle cx="12" cy="12" r="9"></circle></svg></span><span><b style="color: #C2410C">NEEDS ATTENTION</b>Capacitors — mixing up series and parallel. 3 short sessions added this week.</span></div>
+<div class="note"><span class="ni" style="background: #E0E7FF; color: #4338CA"><svg class="ic" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"></path></svg></span><span><b style="color: #4338CA">HOW YOU CAN HELP</b>Ask how Sunday's mock felt. No need to add extra hours — the plan adjusts itself.</span></div>
+</div>
+<a href="#" style="height: 52px; border-radius: 14px; background: #16A34A; color: #FFFFFF; font-weight: 800; font-size: 15px; display: flex; align-items: center; justify-content: center; gap: 8px"><svg class="ic" viewBox="0 0 24 24"><path d="M4 20l1.5-4A8 8 0 1 1 8 18.5z"></path></svg>Reply to mentor on WhatsApp</a>
+<div style="font-size: 12px; color: #5B6178; line-height: 1.5; text-align: center">Sent every Sunday. Reply STOP to pause.<br>Manage consent or delete data in the app.</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1240}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

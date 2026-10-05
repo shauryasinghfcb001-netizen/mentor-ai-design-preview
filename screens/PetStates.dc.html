@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mentor pet states</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#4338CA}a:hover{color:#3730A3}
+.card{background:#FFFFFF;border:1px solid #E4E6EF;border-radius:18px;padding:16px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.stage{height:92px;width:100%;display:flex;align-items:flex-end;justify-content:center;position:relative}
+.card b{font-size:15px}
+.card small{font-size:12px;color:#5B6178;line-height:1.4}
+.pet{position:relative;width:60px;height:62px}
+.pet .bd{position:absolute;left:4px;bottom:0;width:52px;height:48px;border-radius:26px 26px 22px 22px;background:#6366F1;box-shadow:inset -6px -6px 0 rgba(30,27,75,.2)}
+.pet .ey{position:absolute;top:15px;width:9px;height:11px;border-radius:5px;background:#FFFFFF}
+.pet .ey::after{content:'';position:absolute;left:2px;top:3px;width:5px;height:6px;border-radius:3px;background:#1E1B4B}
+.pet .e1{left:13px}.pet .e2{left:30px}
+.pet .ck{position:absolute;top:29px;width:8px;height:4px;border-radius:2px;background:#F9A8D4}
+.pet .k1{left:7px}.pet .k2{left:37px}
+.pet .mo{position:absolute;top:28px;left:21px;width:10px;height:5px;border-bottom:2px solid #1E1B4B;border-radius:0 0 6px 6px}
+.pet .sp{position:absolute;top:0;left:22px;width:16px;height:16px}
+.pet .arm{position:absolute;right:-4px;top:16px;width:10px;height:22px;border-radius:5px;background:#6366F1;transform-origin:50% 100%;animation:wave .6s ease-in-out infinite alternate}
+.pet.sleepy .ey{height:3px;top:20px;background:#1E1B4B}
+.pet.sleepy .ey::after{display:none}
+.pet.sleepy .bd{background:#818CF8}
+.pet.sleepy .mo{width:6px;left:23px;height:3px}
+.pet.think .ey::after{top:1px;left:3px}
+.bob{animation:bob 2.4s ease-in-out infinite}
+.dance{animation:dance .8s ease-in-out infinite}
+.breathe{animation:breathe 3.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes dance{0%,100%{transform:rotate(-8deg) translateY(0)}50%{transform:rotate(8deg) translateY(-6px)}}
+@keyframes wave{from{transform:rotate(10deg)}to{transform:rotate(45deg)}}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.04,0.97)}}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+.dots{position:absolute;top:0;left:50%;margin-left:18px;display:flex;gap:4px;background:#FFFFFF;border:1px solid #E4E6EF;border-radius:10px;padding:6px 8px}
+.dots i{width:6px;height:6px;border-radius:3px;background:#4338CA;animation:blink 1.2s ease-in-out infinite}
+.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+.zz{position:absolute;top:4px;left:50%;margin-left:22px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;color:#818CF8;font-size:16px}
+@media (prefers-reduced-motion:reduce){.bob,.dance,.breathe,.pet .arm,.dots i{animation:none}}
+</style>
+</helmet>
+<div style="width: 900px; height: 400px; box-sizing: border-box; padding: 28px 32px; background: #F6F7FB; font-family: 'Plus Jakarta Sans', sans-serif; color: #12142B; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end">
+<div>
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 28px; font-weight: 800">[PET NAME] · mentor pet</div>
+<div style="font-size: 13px; color: #5B6178; margin-top: 4px">Floats bottom-right on every tab, above the nav. Tap = quick help. Drag to any edge. Never sits on a button.</div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; flex: 1">
+<div class="card">
+<div class="stage"><div class="pet bob"><svg class="sp" viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z" fill="#F59E0B"></path></svg><div class="bd"></div><div class="ey e1"></div><div class="ey e2"></div><div class="ck k1"></div><div class="ck k2"></div><div class="mo"></div></div></div>
+<b>Idle</b><small>Default. Gentle bob on every tab.</small>
+</div>
+<div class="card">
+<div class="stage"><div class="pet"><svg class="sp" viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z" fill="#F59E0B"></path></svg><div class="arm"></div><div class="bd"></div><div class="ey e1"></div><div class="ey e2"></div><div class="ck k1"></div><div class="ck k2"></div><div class="mo"></div></div></div>
+<b>Wave</b><small>App open greeting. Leads the first-time tab tour.</small>
+</div>
+<div class="card" style="border-color: #86EFAC; background: #F0FDF4">
+<div class="stage"><div class="pet dance"><svg class="sp" viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z" fill="#F59E0B"></path></svg><div class="bd"></div><div class="ey e1"></div><div class="ey e2"></div><div class="ck k1"></div><div class="ck k2"></div><div class="mo" style="height: 7px"></div></div></div>
+<b>Dance</b><small>Today's task done. Game unlocks.</small>
+</div>
+<div class="card">
+<div class="stage"><span class="zz">z z</span><div class="pet sleepy breathe"><svg class="sp" viewBox="0 0 24 24" style="opacity: 0.4"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z" fill="#F59E0B"></path></svg><div class="bd"></div><div class="ey e1"></div><div class="ey e2"></div><div class="mo"></div></div></div>
+<b>Sleepy</b><small>No activity a while. Nudge goes to parent, not a guilt-trip.</small>
+</div>
+<div class="card">
+<div class="stage"><span class="dots"><i></i><i></i><i></i></span><div class="pet think"><svg class="sp" viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z" fill="#F59E0B"></path></svg><div class="bd"></div><div class="ey e1"></div><div class="ey e2"></div><div class="ck k1"></div><div class="ck k2"></div><div class="mo" style="width: 6px; left: 23px; border-radius: 3px"></div></div></div>
+<b>Thinking</b><small>AI is working (plan update, answer check).</small>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":900,"height":400}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
